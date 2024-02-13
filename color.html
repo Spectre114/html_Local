@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="colortext">Hi I am Harsh</h1>
+        <input type="color" id="color_change" >
+        <button onclick="colorch()">Change</button>
+        <script>
+            col = document.getElementById("color_change");
+            col_change = document.getElementById("colortext");
+            function colorch()
+            {
+                val = col.value;
+                col_change.style.color=val;
+            }
+        </script>
+    </body>
+</html>

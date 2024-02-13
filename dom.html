@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            #parent
+            {
+                background-color: rgb(90, 88, 88);
+                height:20px;
+                width:50px;
+                border-radius:20px;
+                padding:2px;
+                position:relative;
+            }
+            #child
+            {
+                background-color:white;
+                height:inherit;
+                width:20px;
+                border-radius:50%;
+                position:absolute;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="parent" onclick="toggle()">
+            <div id="child">
+
+            </div>
+        </div>
+        <script>
+            toggle_status=false;
+            tog_parent = document.getElementById("parent");
+            tog_child = document.getElementById("child");
+            function toggle()
+            {
+                toggle_status = !toggle_status;
+                console.log(toggle_status)
+                if(toggle_status)
+                {
+                    tog_parent.style="background-color:green";
+                    tog_child.style="right:4px";
+                }
+                else
+                {
+                    tog_parent.style="background-color:rgb(90, 88, 88)";
+                    tog_child.style="left:4px";
+                }
+            }
+        </script>
+    </body>
+
+</html>

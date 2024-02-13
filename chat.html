@@ -1,0 +1,61 @@
+<html>
+    <head>
+       <style>
+        .chat_contain
+        {
+            width:350px;
+            height:500px;
+            background-color: beige;
+            padding:10px
+        }
+        .chat_content
+        {
+            height:90%;
+            overflow-y:scroll;
+            background-color: bisque;
+        }
+        .chat_contain
+        {
+            margin-top:25px;
+        }
+        .chat_name
+        {
+            font-weight:bold;
+            font-size:18px;
+        }
+        .chat_message
+        {
+            margin-top:5px;
+        }
+       </style>
+
+    </head>
+    <body>
+        <div class="chat_contain">
+            <div class="chat_content" id="chat_content">
+                </div>
+
+            </div>
+            <div class="chat_input">
+                <input id="username" type="text" placeholder="Username">
+                <br>
+                <input id="message" onchange="update_chat()" type="text" placeholder="send a message">
+            </div>
+        </div>
+        <script>
+            chat_content=document.getElementById("chat_content");
+            username=document.getElementById("username");
+            message=document.getElementById("message");
+            function update_chat()
+            {
+                name=username.value;
+                msg=message.value;
+                content=`<div class="chat">
+                    <div class="chat_name">${name}</div>
+                    <div class="chat_message">${msg}</div>
+                </div>`;
+                chat_content.innerHTML=chat_content.innerHTML+content;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="number" id="number1">
+        <input type="number" id="number2">
+        <button id="sod" onclick="sumofadd()">Add</button>
+        <h1 id="out"></h1>
+        <script>
+            num1=document.getElementById("number1");
+            num2=document.getElementById("number2");
+            output=document.getElementById("out");
+            function sumofadd()
+            {
+                sum=Number(num1.value) + Number(num2.value);
+                output.innerHTML=sum;
+            }
+        </script>
+    </body>
+</html>

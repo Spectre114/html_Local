@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <!-- action - for url, method - to send the data to the server(get/post) enctype is optional by default it is already encrypted -->
+    <form action = "save.php" method = "get">
+        <label for="v1">First Name</label>
+        <input type="text" id = "v1" name="fname" placeholder="First name" required>
+        <label for="v2">Last Name</label>
+        <input type="text" id = "v2" name="lname" placeholder="Last name">
+        <label for="v3">Roll No</label>
+        <input type="text" id = "v3" name = "rno" placeholder="Roll no">
+        <label for="r1">GEU</label>
+        <input type="radio" id = "r1">
+        <input list="s2" name="s2"> <!-- must have same id as datalist-->
+        <datalist id="s2">
+            <option value="UK">Uttarakhand</option>
+            <option value="DLI">Delhi</option>
+            <option value="ASM">Assam</option>
+        </datalist>
+        <input type="submit" value="submit">
+        <!-- <select name="States" id="s1">
+            <option value="UK">Uttarakhand</option>
+            <option value="DLI">Delhi</option>
+            <option value="ASM">Assam</option>
+        </select> -->
+        
+    </form>
+    <!-- <input type="button" value="alert" onclick="alert('hi')"> -->
+    <!-- <button >Hello</button> -->
+</body>
+</html>
