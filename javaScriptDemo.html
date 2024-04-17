@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let n = 1000000;
+            let n2 = 1_0_0_000;
+            let n3 = 1e5;
+            let n4 = 123e-2;
+            let n5 = 7;
+            console.log(n5.toString(2));//converted to binary
+            console.log((.1+.2).toFixed(2) == .3);//true
+            console.log(Object.is(0,-0));//false
+            let s1 = 100;
+            let s2 = "100";
+            console.log(s1 == s2);//true
+            console.log(s1 === s2);//false
+            <!-- console.log(n5);-->//111
+            let s4 = "100px";
+            let s5 = "200px";
+            let s6 = parseInt(s4) + parseInt(s5);
+            console.log(s6); //300
+            /*let student = {
+                name:"Kartick",
+                branch:"CSE",
+                hello:function(){
+                    alert("Hi");
+                }
+            }
+            console.log(student.name);
+            student.hello();*/
+            let str = "Graphic Era University";
+            console.log(str.length);
+            console.log(str[0]);
+            /*for(ch1 of str){
+                console.log(ch1);
+            }*/
+            //slice can take negative index(traversing in reverse) while substring cannot
+            console.log(str.slice(3,10));
+            //console.log(substr(index,length)); ind can be negative, negative index means 
+            //traversing from last till that index and then traversing ahead till the.
+        </script>
+    </body>
+</html>

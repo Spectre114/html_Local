@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="Form" action="save.php" method="get" >
+        <div class="formchild">
+            <label for="name">Full Name</label>
+            <input type="text" name="fname" id="name" pattern="[a-zA-Z]+">
+            <br>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <br>
+            <label for="pin">Pin</label>
+            <input type="text" name="pin" id="pin" pattern="[0-9]+">
+            <br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <label for="pfp">Profile Picture</label>
+            <input type="file" name="pfp" id="pfp" accept=".jpg">
+            <br>
+        </div>
+    </form>
+</body>
+</html>

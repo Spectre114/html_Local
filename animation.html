@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @keyframes pulse {
+            0%{
+                background-color:red;
+            }
+            100%{
+                background-color: purple;
+            }
+        }
+        @keyframes box1{
+            /*from{
+                top:0px;
+            }
+            to{
+                top: 300px;
+            }*/
+            0%{
+                top:0px;
+            }
+            50%{
+                top:300px;
+            }
+            100%{
+                top:0px;
+            }
+               
+        }
+        @keyframes box2{
+            /*from{
+                top:0px;
+            }
+            to{
+                top: 300px;
+            }*/
+            0%{
+                top:300px;
+            }
+            50%{
+                top:0px;
+            }
+            100%{
+                top:300px;
+            }
+               
+        }
+        body{
+            animation: pulse 10s infinite
+        }
+        .b1{
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            animation:box1 2s infinite;
+            position: relative;
+            margin-right: 50px;
+        }
+        .b2{
+            background-color: black;
+            height: 50px;
+            width: 50px;
+            animation:box2 1.5s infinite;
+            position: relative;
+            margin-right: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;">
+    <div class="b1"></div>
+    <div class="b1"></div>
+    <div class="b1"></div>
+    <div class="b1"></div>
+    <div class="b1"></div>
+    </div>
+    <div style="display: flex;">
+    <div class="b2"></div>
+    <div class="b2"></div>
+    <div class="b2"></div>
+    <div class="b2"></div>
+    <div class="b2"></div>
+    </div>
+</body>
+</html>
