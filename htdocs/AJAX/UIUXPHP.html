@@ -7,14 +7,17 @@
         <script src="jquery-3.7.1.js"></script>
     </head>
     <body>
-        <button>Get Data</button>
         <label for="rollno">Enter Roll No</label>
         <input type="text" name="rollno" id="rollno">
+        <br>
+        <div>Data:-</div>
+        <br>
         <div id="res"></div>
         <script>
             $(document).ready(function(){
-                $("button").click(function(){
-                    $("#res").load("getData.php?roll=123");
+                $("#rollno").keyup(function(){
+                    let roll = $("#rollno").val();
+                    $("#res").load(`getData.php?roll=${roll}`);
 
                 })
             })
